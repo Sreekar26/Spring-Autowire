@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- autowire byType --> 
+	<!-- <bean id="employee" class="com.sreekar.autowire.Employee" autowire="byType">
+		<property name="empId" value="8290"></property>
+		<property name="empName" value="Sreekar Chukka"></property>
+		<property name="empDesignation" value="Software Engineer"></property>
+
+	</bean>
+	
+	<bean id="panCard1" class="com.sreekar.autowire.PanCard">
+		<property name="panName" value="Sreekar Chukka"></property>
+		<property name="panNumber" value="EEPPS5737R"></property>
+	</bean>
+
+	<bean id="panCard1" class="com.sreekar.autowire.PanCard">
+		<property name="panName" value="Sreekar Chukka"></property>
+		<property name="panNumber" value="EEPPS5737R"></property>
+	</bean> -->
+	
+	
+	<!-- autowire byName -->
+	<!-- <bean id="employee" class="com.sreekar.autowire.Employee" autowire="byType">
+		<property name="empId" value="8290"></property>
+		<property name="empName" value="Sreekar Chukka"></property>
+		<property name="empDesignation" value="Software Engineer"></property>
+
+	</bean>
+
+	<bean id="panCard" class="com.sreekar.autowire.PanCard">
+		<property name="panName" value="Sreekar Chukka"></property>
+		<property name="panNumber" value="EEPPS5737R"></property>
+	</bean> -->
+	
+	<bean id="employee" class="com.sreekar.autowire.Employee" autowire="constructor">
+	<constructor-arg name="empId" value="0614"></constructor-arg>
+	<constructor-arg name="empName" value="Sreekar Chukka"></constructor-arg>
+	<constructor-arg name="empDesignation" value="Software Engineer"></constructor-arg>
+	</bean>
+	
+	<bean id="panCard123" class="com.sreekar.autowire.PanCard">
+		<property name="panName" value="Sreekar C"></property>
+		<property name="panNumber" value="EEPPS5737R"></property>
+	</bean>
+	
+	
+
+</beans>
